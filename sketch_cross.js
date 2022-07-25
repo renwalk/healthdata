@@ -1,3 +1,5 @@
+let speed;
+
 function setup() {
   createCanvas(800, 200);
 }
@@ -8,7 +10,7 @@ function draw() {
   noStroke()
   fill(250,96,96);
   rectMode(CENTER);
-  rect(pmouseX, pmouseY, 20, 50);
-  rect(pmouseX, pmouseY, 50, 20);
+  rect(pmouseX, pmouseY, mouseX, mouseY);
+  rect(pmouseX, pmouseY, mouseY, mouseX);
 
 }
